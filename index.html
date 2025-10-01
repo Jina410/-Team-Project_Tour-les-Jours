@@ -13,10 +13,10 @@
 
   <link href="css/common.css" rel="stylesheet"> <!--공통CSS-->
   <link href="css/header.css" rel="stylesheet"> <!--headerCSS-->
-  <link href="css/main.css" rel="stylesheet"> <!--headerCSS-->
+  <link href="css/main.css" rel="stylesheet"> <!--mainCSS-->
   <link href="css/footer.css" rel="stylesheet"> <!--footerCSS-->
   <script src="js/common.js"></script> <!--공통JS-->
-  <script src="js/main.js"></script> <!--공통JS-->
+  <script src="js/main.js"></script> <!--mainJS-->
 
 </head>
 
@@ -25,7 +25,7 @@
     <div class="top-wrap">
       <div class="container">
         <div class="header-logo">
-          <a href="#">
+          <a href="index.html">
             <img src="img/common/logo.png" alt="뚜레쥬르 로고">
           </a>
         </div>
@@ -47,21 +47,21 @@
     <nav class="main-menu">
       <div class="container">
         <ul class="menu">
-          <li><a href="#">BRAND</a>
+          <li><a href="brand.html">BRAND</a>
             <ul class="sub-menu">
               <li><a href="#">브랜드 스토리</a></li>
               <li><a href="#">글로벌 뚜레쥬르</a></li>
               <li><a href="#">뚜레쥬르 라뜰리에</a></li>
             </ul>
           </li>
-          <li><a href="#">PRODUCT</a>
+          <li><a href="product.html">PRODUCT</a>
             <ul class="sub-menu">
               <li><a href="#">서브메뉴1</a></li>
               <li><a href="#">서브메뉴2</a></li>
               <li><a href="#">서브메뉴3</a></li>
             </ul>
           </li>
-          <li><a href="#">COMMUNITY</a>
+          <li><a href="community.html">COMMUNITY</a>
             <ul class="sub-menu">
               <li><a href="#">서브메뉴1</a></li>
               <li><a href="#">서브메뉴2</a></li>
@@ -69,7 +69,7 @@
               <li><a href="#">서브메뉴4</a></li>
             </ul>
           </li>
-          <li><a href="#">INQUIRYG</a>
+          <li><a href="inquiryg.html">INQUIRYG</a>
             <ul class="sub-menu">
               <li><a href="#">고객센터</a></li>
               <li><a href="#">매장찾기</a></li>
@@ -80,11 +80,69 @@
       <div class="menu-bg"></div>
     </nav>
   </header>
+  <div class="header-case"></div>
 
   <main>
-    <div class="header-case"></div>
     <!--! 여기부터 작성하기-->
+    <!--* #banner 배너-->
+    <div id="banner" class="swiper main-mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/main/banner1.jpg" alt="배너이미지1">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/main/banner1.jpg" alt="배너이미지2">
+        </div>
+      </div>
+      <div class="container">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
 
+    <!--* #recommended-products 추천제품 섹션-->
+    <section id="recommended-products">
+      <div class="container">
+        <div class="recommended-products_wrap">
+          <div class="swiper main-mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="right-wrap">
+            <div class="text-box">
+              <h1>RECOMMENDED PRODUCTS</h1>
+              <p>뚜레쥬르가 추천하는 따끈한 디저트를 만나보세요!</p>
+            </div>
+            <div class="swiper main-mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <a href="product.html" class="btn">전제품 보기<img src="img/common/icon/arrow-right-circle.png" alt="이동 화살표"></a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--! 여기까지 작성하기-->
   </main>
 
@@ -117,7 +175,7 @@
             <h1>1577-0700</h1>
             <p>고객센터 운영시간 : 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00) / 주말 공휴일 제외</p>
             <p>문의하신 내용에 대한 답변은 요청 시 등록하신 E-Mail로 발송되며<br>
-            “온라인 상담 내역”을 통해 확인 가능합니다.</p>
+              “온라인 상담 내역”을 통해 확인 가능합니다.</p>
             <ul class="sns-menu-wrap">
               <li><a href="#"><img src="img/common/icon/sns_X_icon_lime.png" alt="X"></a></li>
               <li><a href="#"><img src="img/common/icon/sns_faceBook_icon_lime.png" alt="페이스북"></a></li>

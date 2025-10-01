@@ -1,0 +1,53 @@
+/** #Banner */
+#banner{
+  width: 100%; height: calc(100vh - 160px); min-width: 1280px;
+}
+.swiper-slide img { /* 슬라이드 기본으로 이미지 꽉 채우기*/
+  display: block;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+#banner.main-mySwiper1 .container{ /* main-mySwiper1 배너슬라이드*/
+  position: relative;
+}
+#banner.main-mySwiper1 .swiper-button-next,
+#banner.main-mySwiper1 .swiper-button-prev{
+  position: absolute;
+  bottom:6px; right: 0; top:auto; left:auto;
+  font-weight: 900;
+  transform: scale(0.3);
+  color:var(--color-white2);
+  transition: .2s;
+}
+#banner.main-mySwiper1 .swiper-button-prev{
+  right: 83px;
+  z-index: 100;
+}
+#banner.main-mySwiper1 .swiper-pagination{
+  position: absolute;
+  right: 30px; bottom:19px;
+  width: auto;
+  text-align: right;
+  font-weight: 500;
+  font-family: "Pretendard";
+  font-size: 16px;
+  color:var(--color-white2);
+}
+#banner.main-mySwiper1 .swiper-pagination-current{opacity: 1;}
+#banner.main-mySwiper1 .swiper-pagination-total{opacity: 0.5;}
+
+
+/** #recommended-products */
+#recommended-products .recommended-products_wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#recommended-products .main-mySwiper2{
+  outline: 1px solid;
+  width: 490px; height: 490px;
+}
+#recommended-products .main-mySwiper3{
+  outline: 1px solid;
+  width: 670px; height: auto;
+}
