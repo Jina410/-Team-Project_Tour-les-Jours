@@ -1,0 +1,64 @@
+/* 구글폰트 */
+/* ! "Montserrat" , "Noto Sans KR" */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/*폰트적용*/
+/* ! "Pretendard" 200 > normal > 500 > bold */
+/* ! "Utopia" 300 > 500 > bold*/
+@font-face{ font-family:"Pretendard"; src:url(../font/Pretendard-1.3.9/Pretendard-SemiBold.woff) format("woff"); font-weight: 500;}
+@font-face{ font-family:"Pretendard"; src:url(../font/Pretendard-1.3.9/Pretendard-Bold.woff) format("woff"); font-weight: bold;}
+@font-face{ font-family:"Pretendard"; src:url(../font/Pretendard-1.3.9/Pretendard-Medium.woff) format("woff"); font-weight: normal;}
+@font-face{ font-family:"Pretendard"; src:url(../font/Pretendard-1.3.9/Pretendard-Light.woff) format("woff"); font-weight:200;}
+@font-face{ font-family:"Utopia"; src:url(../font/utopia-std/UtopiaStd-Bold.woff) format("woff"); font-weight:bold;}
+@font-face{ font-family:"Utopia"; src:url(../font/utopia-std/UtopiaStd-Semibold.woff) format("woff"); font-weight: 500;}
+@font-face{ font-family:"Utopia"; src:url(../font/utopia-std/UtopiaStd-Regular.woff) format("woff"); font-weight: 300;}
+
+
+/*노말라이즈*/
+/* ! 기본 폰트 Noto Sans KR // 기본컬러 #191C1A(텍스트black1) // 기본사이즈 16px */
+*{margin:0; padding:0;box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none; color:inherit}
+html{scroll-behavior: smooth;}
+html,body{width: 100%; height: 100%; font-family: "Noto Sans KR", sans-serif; color:#191C1A; font-size:16px;}
+button{background-color: transparent; border:none; outline: none; cursor: pointer;}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-results-button{
+    display: none;
+}
+img{display: block;}
+
+/*공통속성*/
+.container{
+  width: 1280px; max-width: 1280px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+:root{
+  --color-main_green: #365442;
+  --color-main_beige: #B39171;
+  --color-main_ivory: #F5EDE5;
+  --color-main_orange: #ED6C24;
+
+  --color-sub_Dark_green: #153A25;
+  --color-sub_light_green: #DADFCB;
+  --color-sub_lime: #EDFFA1;
+  --color-sub_beige_light: #CCBEA5;
+  --color-sub_brown_gray: #70655B;
+  --color-sub_mid_green: #456050;
+  --color-sub_mint_gray: #E5EBD4;
+  --color-white1: #F5F5F5;
+  --color-white2: #FBFBFB;
+  --color-black: #121212;
+
+  --color-text1_dark: #191C1A;
+  --color-text2_gray: #595C58;
+  --color-text3_light: #A3A8A2;
+
+  --color-bg_white: #FBFBFB;
+}
+
+main > .header-case{
+  width: 100%; height: 160px;
+}
