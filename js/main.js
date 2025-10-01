@@ -17,7 +17,7 @@ $(function () {
       prevEl: ".swiper-button-prev",
     },
     autoplay: {
-      delay: 4000,
+      delay: 8000,
       disableOnInteraction: false
     },
     loop: true,
@@ -25,11 +25,16 @@ $(function () {
 
   //SWIPER 추천제품 이벤트 슬라이드
   var swiper = new Swiper(".main-mySwiper2", {
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false
+    },
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
     loop: true,
+    effect: "fade",
   });
 
   //SWIPER 추천제품 제품 슬라이드
