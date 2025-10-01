@@ -46,12 +46,16 @@
   justify-content: space-between;
   align-items: center;
 }
-#recommended-products .main-mySwiper2{
+#recommended-products .main-mySwiper2{ /* main-mySwiper2 이벤트페이지 슬라이드 */
   width: 490px; height: 490px;
 }
-#recommended-products .main-mySwiper3{
-  width: 670px; height: auto;
+#recommended-products .main-mySwiper2 .swiper-pagination .swiper-pagination-bullet{
+  background: var(--color-main_beige);
 }
+#recommended-products .main-mySwiper2 .swiper-pagination .swiper-pagination-bullet-active{
+  background:var(--color-main_beige);
+}
+
 #recommended-products .recommended-products_wrap .right-wrap .text-box h1{
   font: bold 30px/1.5 "Pretendard";
   color: var(--color-text1_dark);
@@ -61,6 +65,64 @@
   color:var(--color-text2_gray);
 }
 
+#recommended-products .main-mySwiper3{ /* main-mySwiper3 추천제품 슬라이드 */
+  width: 670px; height: auto;
+}
+#recommended-products .main-mySwiper3{
+  position: relative;
+  padding: 43px 0;
+}
+#recommended-products .main-mySwiper3 .product-item img{
+  filter:contrast(92%) sepia(7%) saturate(120%);
+}
+#recommended-products .main-mySwiper3 .product-item .img-wrap{
+  position: relative;
+  margin-bottom: 10px;
+}
+#recommended-products .main-mySwiper3 .product-item .img-wrap span{
+  position: absolute;
+  bottom: 10px; left:13px; 
+  padding: 3px 16px;
+  border-radius: 16px;
+  background: var(--color-main_beige);
+  color:var(--color-white1);
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#recommended-products .main-mySwiper3 .product-item p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
 #recommended-products .main-mySwiper3 .swiper-pagination{
-  
+  height: 7px;
+  position: absolute;
+  bottom: 0; top:auto;
+}
+#recommended-products .main-mySwiper3 .swiper-pagination-horizontal{
+  background: #b3917179;
+}
+#recommended-products .main-mySwiper3 .swiper-pagination-horizontal .swiper-pagination-progressbar-fill{
+  background: var(--color-main_beige);
+}
+#recommended-products .right-wrap .btn{
+  float: right;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  color: var(--color-sub_brown_gray);
+  font-weight: bold;
+  margin-top:18px;
+  transition: .2s;
+}
+#recommended-products .right-wrap .btn img{
+  margin-left: 6px;
+  transition: .2s ease-out;
+}
+#recommended-products .right-wrap .btn:hover{
+  filter: brightness(50%);
+}
+#recommended-products .right-wrap .btn:hover img{
+  transform: translateX(5px);
 }

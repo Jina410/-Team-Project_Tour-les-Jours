@@ -40,6 +40,7 @@ $(function () {
   //SWIPER 추천제품 제품 슬라이드
   var swiper = new Swiper(".main-mySwiper3", {
     slidesPerView: 3,
+    spaceBetween: 12,
     pagination: {
       el: ".swiper-pagination",
       type: "progressbar",
