@@ -39,6 +39,7 @@
 
 /** #recommended-products */
 #recommended-products{
+  width: 100%; min-width: 1280px;
   padding:135px 0;
 }
 #recommended-products .recommended-products_wrap{
@@ -72,12 +73,21 @@
   position: relative;
   padding: 43px 0;
 }
+#recommended-products .main-mySwiper3 .product-item .img-box{
+  width: 214px; height: 214px;
+  overflow: hidden;
+}
 #recommended-products .main-mySwiper3 .product-item img{
   filter:contrast(92%) sepia(7%) saturate(120%);
+  transition: .2s;
 }
 #recommended-products .main-mySwiper3 .product-item .img-wrap{
   position: relative;
   margin-bottom: 10px;
+}
+
+#recommended-products .main-mySwiper3 .product-item a:hover img{
+  transform: scale(1.1);
 }
 #recommended-products .main-mySwiper3 .product-item .img-wrap span{
   position: absolute;
@@ -129,7 +139,7 @@
 
 /** #brand-info */
 #brand-info{
-  width: 100%; height: 750px;
+  width: 100%; height: 750px; min-width: 1280px;
   position: relative;
 }
 #brand-info .brand-info_wrap{
@@ -148,7 +158,8 @@
   color: var(--color-sub_dark_green);
 }
 #brand-info .brand-info_wrap .text-box p{
-  font-weight: 400;
+  margin-top: 18px;
+  font-weight: 500;
   font-size: 16px;
   color: var(--color-text2_gray);
 }
@@ -170,6 +181,10 @@
 #brand-info .brand-info_wrap .img-box_wrap .img-box img{
   width: 100%; height: 100%;
   object-fit: cover;
+  transition: .2s;
+}
+#brand-info .brand-info_wrap .img-box_wrap .img-box:hover img{
+  transform: scale(1.1);
 }
 #brand-info .brand-info_wrap .img-box_wrap .img-box .overlay{
   position: absolute;
@@ -190,6 +205,165 @@
   background: #fff;
 }
 #brand-info svg{
+  width: 100%;
   position: absolute;
   bottom:0;
+  pointer-events: none;
+  transform: translateY(2px);
+}
+
+.section-bg{ width: 100%; min-width: 1280px; background: linear-gradient(180deg,rgba(255, 255, 255, 0.8) 0%, rgb(255, 249, 237) 80%);}
+
+/** #service-shortcut */
+#service-shortcut{
+  width: 100%; min-width: 1280px; height: 813px;
+  background: var(--color-sub_mid_green);
+  display: flex;
+
+}
+#service-shortcut .service-shortcut_wrap{
+  display: flex;
+  gap: 213px;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme{
+  position: relative;
+  transition: .4s;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme .itme-click{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 255px; height: 365px;
+  border-radius: 45px;
+  background: #fff;
+  padding: 40px 40px 0;
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
+
+  transition: .3s;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme .itme-click img:nth-of-type(1){
+  margin-bottom: 15px;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme:nth-of-type(2) .itme-click img:nth-of-type(1){
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme .itme-click h3{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme .itme-click p{
+  color: var(--color-text2_gray);
+  font-weight: 500;
+  margin-bottom: 21px;
+  align-self: flex-start;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme .itme-click img:nth-of-type(2){
+  align-self: flex-end;
+  transform: translateX(10px);
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme .img-box{
+  width: 408px; height: 408px;
+  border-radius: 45px;
+  overflow: hidden;
+  box-shadow: 0 0 36.5px rgb(0,0,0,0.35);
+  transform: translate(159px, 25px);
+
+  transition: .4s;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme .img-box img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme .itme-click:hover{
+  transform: translateY(-15px);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.15);
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme:hover{
+  transform: translateY(-5px);
+}
+#service-shortcut .service-shortcut_wrap .service-shortcut_itme:hover .img-box{
+  box-shadow: 0 0 40px rgb(0,0,0,0.2);
+}
+
+/* #instagram-post  */
+#instagram-post{
+  display: flex;
+  width: 100%; min-width: 1280px; height: 813px;
+  background: var(--color-sub_mid_green);
+}
+
+#instagram-post .instagram-post_wrap .text-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:12px;
+}
+#instagram-post .instagram-post_wrap .text-box > a{
+  width: fit-content;
+  display: block;
+  color: var(--color-main_ivory);
+  font-weight: bold;
+  font-size: 26px;
+  transition: .2s;
+}
+#instagram-post .instagram-post_wrap .text-box > a:hover{
+  transform: translateY(-5px);
+}
+#instagram-post .instagram-post_wrap .text-box p{
+  color: #e6ded5;
+  font-weight: 400;
+}
+#instagram-post .instagram-post_wrap .post-grid{
+  display: flex;
+  gap:21px;
+  margin-top: 60px;
+}
+#instagram-post .instagram-post_wrap .post-grid .post-item{
+  width: 282px; height: 282px; 
+  overflow: hidden;
+  box-shadow: 4px 4px 17px rgba(0,0,0,0.2);
+}
+#instagram-post .instagram-post_wrap .post-grid .post-item img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: .2s;
+}
+#instagram-post .instagram-post_wrap .post-grid .post-item:hover img{
+  transform: scale(1.1);
+}
+#instagram-post .instagram-post_wrap .community-btn_goto{
+  position: relative;
+  display: block;
+  width: 300px; height: 50px;
+  background: var(--color-white1);
+  color: var(--color-main_green);
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 64px;
+  padding-right: 24px;
+  margin: 69px auto 0;
+
+  transition: .2s;
+}
+#instagram-post .instagram-post_wrap .community-btn_goto::after{
+  content: "";
+  width: 24px; height: 24px;
+  background: url(../img/common/icon/chevron-right.png) no-repeat center;
+  position: absolute;
+  bottom:12px; right: 18px;
+  transition: .2s;
+}
+#instagram-post .instagram-post_wrap .community-btn_goto:hover{
+  background: var(--color-main_green);
+  color: var(--color-white1);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.09);
+}
+#instagram-post .instagram-post_wrap .community-btn_goto:hover::after{
+  filter:saturate(100%) contrast(0%) brightness(200%) ;
 }

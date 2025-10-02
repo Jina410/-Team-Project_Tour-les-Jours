@@ -10,6 +10,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--제이쿼리JS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> <!--SwiperCSS-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--SwiperJS-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> <!--gsap-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> <!--gsap-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script> <!--gsap-->
 
   <link href="css/common.css" rel="stylesheet"> <!--공통CSS-->
   <link href="css/header.css" rel="stylesheet"> <!--headerCSS-->
@@ -25,7 +28,7 @@
   <div class="top">
     <a href="#"><img src="img/common/icon/topBtn1.png" alt="top버튼"></a>
   </div>
-  
+
   <header>
     <div class="top-wrap">
       <div class="container">
@@ -94,10 +97,10 @@
     <div id="banner" class="swiper main-mySwiper1">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="img/main/banner1.jpg" alt="배너이미지1">
+          <a href="#"><img src="img/main/banner1.jpg" alt="배너이미지1"></a>
         </div>
         <div class="swiper-slide">
-          <img src="img/main/banner1.jpg" alt="배너이미지2">
+          <a href="#"><img src="img/main/banner1.jpg" alt="배너이미지2"></a>
         </div>
       </div>
       <div class="container">
@@ -107,144 +110,217 @@
       </div>
     </div>
 
-    <!--* #recommended-products 추천제품 섹션-->
-    <section id="recommended-products">
-      <div class="container">
-        <div class="recommended-products_wrap">
-          <div class="swiper main-mySwiper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/main/event_img1.jpg" alt="추석 이벤트"></div>
-              <div class="swiper-slide"><img src="img/main/event_img2.jpg" alt="멤버십 혜택"></div>
-              <div class="swiper-slide"><img src="img/main/event_img3.png" alt="과자 콜라보"></div>
-              <div class="swiper-slide"><img src="img/main/event_img4.jpg" alt="매달앱 혜택"></div>
-              <div class="swiper-slide"><img src="img/main/event_img5.jpg" alt="무료빵 증정"></div>
-              <div class="swiper-slide"><img src="img/main/event_img6.jpg" alt="민생회복 소비쿠폰"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="right-wrap">
-            <div class="text-box">
-              <h1>RECOMMENDED PRODUCTS</h1>
-              <p>뚜레쥬르가 추천하는 따끈한 디저트를 만나보세요!</p>
-            </div>
-            <div class="swiper main-mySwiper3">
+    <div class="section-bg">
+      <!--* #recommended-products 추천제품 섹션-->
+      <section id="recommended-products">
+        <div class="container">
+          <div class="recommended-products_wrap">
+            <div class="swiper main-mySwiper2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
-                <div class="swiper-slide product-item">
-                  <div class="img-wrap">
-                    <img src="img/main/recommended-products1.jpg" alt="이미지제품1">
-                    <span>Gift</span>
-                  </div>
-                  <p>THE 호두파이 (홀)</p>
-                </div>
+                <div class="swiper-slide"><a href="#"><img src="img/main/event_img1.jpg" alt="추석 이벤트"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/main/event_img2.jpg" alt="멤버십 혜택"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/main/event_img3.png" alt="과자 콜라보"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/main/event_img4.jpg" alt="매달앱 혜택"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/main/event_img5.jpg" alt="무료빵 증정"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/main/event_img6.jpg" alt="민생회복 소비쿠폰"></a></div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
-            <a href="product.html" class="btn">전제품 보기<img src="img/common/icon/arrow-right-circle.png" alt="이동 화살표"></a>
+            <div class="right-wrap">
+              <div class="text-box">
+                <h1>RECOMMENDED PRODUCTS</h1>
+                <p>뚜레쥬르가 추천하는 따끈한 디저트를 만나보세요!</p>
+              </div>
+              <div class="swiper main-mySwiper3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <div class="img-box"><img src="img/main/recommended-products1.jpg" alt="이미지제품1"></div>
+                        <span>Gift</span>
+                      </div>
+                      <p>THE 호두파이 (홀)</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <a href="product.html" class="btn">전제품 보기<img src="img/common/icon/arrow-right-circle.png"
+                  alt="이동 화살표"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* #brand-info 브랜드간단소개 섹션-->
+      <section id="brand-info">
+        <div class="container">
+          <div class="brand-info_wrap">
+            <div class="text-box">
+              <h3>Healthy Daily Bakery</h3>
+              <h1>TOUS les JOURS</h1>
+              <p>&nbsp;뚜레쥬르는 글로벌 베이커리 트렌드를 선도하는 브랜드로 거듭나고 있습니다.
+                미국 시장을 첫 문을 두드리며 해외 진출을 시작하여 중국 베이징, 동남아시아 등
+                세계 여러곳에 매장을 오픈하며 베이커리 시정 매출 1위를 목표로
+                종합적인 전략을 추진하여 세계 여러곳에서 뚜레쥬르의 브랜드 인지도와 신뢰도를 쌓아가고 있습니다. </p>
+            </div>
+            <div class="img-box_wrap">
+              <a href="#" class="img-box">
+                <div class="overlay"><span>MORE VIEW</span></div>
+                <img src="img/main/brand-info-img1.jpg" alt="뚜레쥬르 매장">
+              </a>
+              <a href="#" class="img-box">
+                <div class="overlay"><span>MORE VIEW</span></div>
+                <img src="img/main/brand-info-img2.png" alt="뚜레쥬르 라뜰리에 매장">
+              </a>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#456050" fill-opacity="1"
+            d="M0,96L80,90.7C160,85,320,75,480,101.3C640,128,800,192,960,229.3C1120,267,1280,277,1360,282.7L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+          </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#45605070" fill-opacity="1"
+            d="M0,64L80,58.7C160,53,320,43,480,69.3C640,96,800,160,960,202.7C1120,245,1280,267,1360,277.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+          </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#45605070" fill-opacity="1"
+            d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,181.3C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+          </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#45605070" fill-opacity="1"
+            d="M0,128L80,128C160,128,320,128,480,154.7C640,181,800,235,960,250.7C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+          </path>
+        </svg>
+      </section>
+    </div>
+
+    <!--* #service-shortcut 가까운 매장찾기-->
+    <section id="service-shortcut">
+      <div class="container">
+        <div class="service-shortcut_wrap">
+          <div class="service-shortcut_itme">
+            <a href="#" class="itme-click">
+              <img src="img/main/store-location.png" alt="매장찾기 아이콘">
+              <h3>가까운 매장 찾기</h3>
+              <p>전국 어디서나<br>뚜레쥬르를 만나보세요.</p>
+              <img src="img/main/arrow-right-circle.png" alt="화살표 아이콘">
+            </a>
+            <div class="img-box">
+              <img src="img/main/brand-info-img1.jpg" alt="매장 이미지">
+            </div>
+          </div>
+          <div class="service-shortcut_itme">
+            <a href="#" class="itme-click">
+              <img src="img/main/app-download.png" alt="매장찾기 아이콘">
+              <h3>주문도 편하게<br>
+                뚜레쥬르 APP</h3>
+              <p>예약 후 픽업해보세요!</p>
+              <img src="img/main/arrow-right-circle.png" alt="화살표 아이콘">
+            </a>
+            <div class="img-box">
+              <img src="img/main/app-download-img.png" alt="매장 이미지">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--* #brand-info 브랜드간단소개 섹션-->
-    <section id="brand-info">
+    <!--* #instagram-post 인스타그램 공지사항바로가기-->
+    <section id="instagram-post">
       <div class="container">
-        <div class="brand-info_wrap">
+        <div class="instagram-post_wrap">
           <div class="text-box">
-            <h3>Healthy Daily Bakery</h3>
-            <h1>TOUS les JOURS</h1>
-            <p>&nbsp;뚜레쥬르는 글로벌 베이커리 트렌드를 선도하는 브랜드로 거듭나고 있습니다.
-              미국 시장을 첫 문을 두드리며 해외 진출을 시작하여 중국 베이징, 동남아시아 등
-              세계 여러곳에 매장을 오픈하며 베이커리 시정 매출 1위를 목표로
-              종합적인 전략을 추진하여 세계 여러곳에서 뚜레쥬르의 브랜드 인지도와 신뢰도를 쌓아가고 있습니다. </p>
-          </div>
-          <div class="img-box_wrap">
-            <a href="#" class="img-box">
-              <div class="overlay"><span>MORE VIEW</span></div>
-              <img src="img/main/brand-info-img1.jpg" alt="뚜레쥬르 매장">
+            <a href="#">
+              <h3>@touslesjours_kr</h3>
             </a>
-            <a href="#" class="img-box">
-              <div class="overlay"><span>MORE VIEW</span></div>
-              <img src="img/main/brand-info-img2.png" alt="뚜레쥬르 라뜰리에 매장">
-            </a>
+            <p>더 많은 최신 소식은 인스타그램에서 확인 할 수 있습니다!</p>
           </div>
+          <div class="post-grid">
+            <a href="#" class="post-item"><img src="img/main/instagram-img1.png" alt="인스타그램 게시물1"></a>
+            <a href="#" class="post-item"><img src="img/main/instagram-img2.png" alt="인스타그램 게시물2"></a>
+            <a href="#" class="post-item"><img src="img/main/instagram-img3.png" alt="인스타그램 게시물3"></a>
+            <a href="#" class="post-item"><img src="img/main/instagram-img4.png" alt="인스타그램 게시물4"></a>
+          </div>
+          <a href="#" class="community-btn_goto">그 외 뚜레쥬르 공지사항 확인하기</a>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#456050" fill-opacity="1"
-          d="M0,96L80,90.7C160,85,320,75,480,101.3C640,128,800,192,960,229.3C1120,267,1280,277,1360,282.7L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-        </path>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#45605070" fill-opacity="1"
-          d="M0,64L80,58.7C160,53,320,43,480,69.3C640,96,800,160,960,202.7C1120,245,1280,267,1360,277.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-        </path>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#45605070" fill-opacity="1"
-          d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,181.3C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-        </path>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#45605070" fill-opacity="1"
-          d="M0,128L80,128C160,128,320,128,480,154.7C640,181,800,235,960,250.7C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-        </path>
-      </svg>
     </section>
     <!--! 여기까지 작성하기-->
   </main>

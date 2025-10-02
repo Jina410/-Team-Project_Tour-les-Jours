@@ -22,5 +22,15 @@ $(function(){
     } else{
       $(".top").removeClass("on");
     }
+
+    let footerTop = $('footer').offset().top;
+    let btnH = $(".top").outerHeight();
+    let btnBottom = st + winH - btnH - 20;
+
+    if(btnBottom >= footerTop){
+      $('.top > a > img').attr("src", "img/common/icon/topBtn2.png")
+    } else {
+      $('.top > a > img').attr("src", "img/common/icon/topBtn1.png")
+    }
   })
 })
