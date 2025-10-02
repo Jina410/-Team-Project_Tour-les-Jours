@@ -81,7 +81,7 @@ header{
   line-height: 53px;
 }
 .main-menu .sub-menu > li:hover{
-  color: var(--color-sub_Dark_green);
+  color: var(--color-sub_dark_green);
   font-weight: bold;
   transition: .2s;
 }
