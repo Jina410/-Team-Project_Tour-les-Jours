@@ -140,3 +140,13 @@
   font: 500 40px "Utopia";
   color: var(--color-sub_dark_green);
 }
+#brand-info .brand-info-wrap .text-box p{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text2_gray);
+}
+
+#brand-info .brand-info-wrap .img-box_wrap .img-box{
+  outline: 1px solid red;
+  width: 351px; height: 380px;
+}
