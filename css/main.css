@@ -126,3 +126,17 @@
 #recommended-products .right-wrap .btn:hover img{
   transform: translateX(5px);
 }
+
+/** #brand-info */
+#brand-info .brand-info-wrap{
+  display: flex;
+  align-items: flex-start;
+}
+#brand-info .brand-info-wrap .text-box h3{
+  font:500 30px "Utopia";
+  color: var(--color-main_green);
+}
+#brand-info .brand-info-wrap .text-box h1{
+  font: 500 40px "Utopia";
+  color: var(--color-sub_dark_green);
+}
