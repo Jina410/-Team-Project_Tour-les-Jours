@@ -1,3 +1,20 @@
+.top{
+  position: fixed;
+  bottom:20px; right: 20px;
+  z-index: 998;
+  border-radius: 50%;
+  box-shadow: 0 8px 10px #36544277;
+  transition: .3s;
+  opacity: 0;
+}
+.top:hover{
+  transform: translateY(-10px);
+    box-shadow: 0 15px 20px #36544259;
+}
+.top.on{
+  opacity: 1;
+}
+
 header{
   position: fixed;
   top:0; left:0; right: 0;

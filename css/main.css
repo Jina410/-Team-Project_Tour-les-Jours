@@ -128,25 +128,68 @@
 }
 
 /** #brand-info */
-#brand-info .brand-info-wrap{
+#brand-info{
+  width: 100%; height: 750px;
+  position: relative;
+}
+#brand-info .brand-info_wrap{
   display: flex;
   align-items: flex-start;
+  gap: 55px;
+  margin-top: 100px;
+  margin-bottom: 400px;
 }
-#brand-info .brand-info-wrap .text-box h3{
+#brand-info .brand-info_wrap .text-box h3{
   font:500 30px "Utopia";
   color: var(--color-main_green);
 }
-#brand-info .brand-info-wrap .text-box h1{
+#brand-info .brand-info_wrap .text-box h1{
   font: 500 40px "Utopia";
   color: var(--color-sub_dark_green);
 }
-#brand-info .brand-info-wrap .text-box p{
+#brand-info .brand-info_wrap .text-box p{
   font-weight: 400;
   font-size: 16px;
   color: var(--color-text2_gray);
 }
 
-#brand-info .brand-info-wrap .img-box_wrap .img-box{
-  outline: 1px solid red;
+#brand-info .brand-info_wrap .img-box_wrap{
+  display: flex;
+  gap: 30px;
+}
+#brand-info .brand-info_wrap .img-box_wrap .img-box{
+  position: relative;
+  display: block;
   width: 351px; height: 380px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#brand-info .brand-info_wrap .img-box_wrap .img-box:nth-of-type(2){
+  transform: translateY(120px);
+}
+#brand-info .brand-info_wrap .img-box_wrap .img-box img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+#brand-info .brand-info_wrap .img-box_wrap .img-box .overlay{
+  position: absolute;
+  inset: 0;
+  background: #00000059;
+}
+#brand-info .brand-info_wrap .img-box_wrap .img-box .overlay span{
+  position: absolute;
+  bottom:18px; right: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+#brand-info .brand-info_wrap .img-box_wrap .img-box .overlay span::before{
+  content: "";
+  position: absolute;
+  left: -25px; top: 12px;
+  width: 20px; height: 1px;
+  background: #fff;
+}
+#brand-info svg{
+  position: absolute;
+  bottom:0;
 }
