@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>건강한 베이커리, 뚜레쥬르</title> <!--서브메뉴이름 | 뚜레쥬르 << 타이틀양식-->
+  <link rel="icon" href="img/common/favicon_io/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--제이쿼리JS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> <!--SwiperCSS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--SwiperJS-->
+
+  <link href="css/common.css" rel="stylesheet"> <!--공통CSS-->
+  <link href="css/header.css" rel="stylesheet"> <!--headerCSS-->
+  <link href="css/login.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet"> <!--footerCSS-->
+  <script src="js/common.js"></script> <!--공통JS-->
+
+</head>
+
+<body>
+  <div class="login">
+    <div class="login-bg"></div>
+    <div class="login-header">
+      <img src="img/common/logo.png" alt="로고 이미지">
+    </div>
+    <div class="loging-container">
+      <button class="back-btn" onclick="history.back()"><img src="img/login/back-page-arrow.png" alt="뒤로가기버튼">MORE
+        PAGE</button>
+    </div>
+    <div class="login-form-wrap">
+      <div class="loging-container">
+
+        <form>
+          <div class="right-wrap">
+            <div class="text-box">
+              <h1>로그인</h1>
+              <p>보다 많은 서비스를 위해 로그인 하세요!<br>
+                뚜레쥬르의 더 많은 혜택과 이벤트를 누리세요.</p>
+            </div>
+            <div class="form-field">
+              <label for="e-mail">E-mail</label>
+              <input id="e-mail" type="email" name="e-mail" placeholder="이메일을 입력하세요." required>
+            </div>
+            <div class="form-field">
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password" placeholder="비밀번호를 입력하세요." required>
+              <img src="img/login/password-hide.png" alt="패스워드 안보이게하기">
+            </div>
+            <div class="login-keep_wrap">
+              <input id="login-keep" type="checkbox" name="login-keep">
+              <label for="login-keep">로그인 유지</label>
+            </div>
+
+            <button type="submit">로그인</button>
+            <div class="account-actions">
+              <a href="#">회원가입</a>
+              <a href="#">아이디·비밀번호 찾기</a>
+            </div>
+
+            <div class="divider">
+              <p>OR</p>
+            </div>
+            <div class="sns-login_wrap">
+              <a href="#" aria-label="네이버로 로그인"><img src="img/login/naver-login.png" alt="네이버로고-로그인"></a>
+              <a href="#" aria-label="카카오톡으로 로그인"><img src="img/login/kakaotalk-login.png" alt="카카오로고-로그인"></a>
+              <a href="#" aria-label="구글로 로그인"><img src="img/login/google-login.png" alt="구글로고-로그인"></a>
+            </div>
+          </div>
+        </form>
+        <div class="left-wrap">
+          <img src="img/login/login-banner.png" alt="어플다운로드">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
