@@ -58,12 +58,12 @@
 }
 
 #recommended-products .recommended-products_wrap .right-wrap .text-box h1{
-  font: bold 30px/1.5 "Pretendard";
-  color: var(--color-text1_dark);
+  font: bold 30px/1.5 "Utopia Std";
+  color: var(--color-sub_dark_green);
 }
 #recommended-products .recommended-products_wrap .right-wrap .text-box p{
-  font: 400 16px/1.5 ;
-  color:var(--color-text2_gray);
+  font: 400 16px/1.5 "Utopia Std";
+  color:var(--color-main_green);
 }
 
 #recommended-products .main-mySwiper3{ /* main-mySwiper3 추천제품 슬라이드 */

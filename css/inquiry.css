@@ -1,0 +1,326 @@
+/*#inquiry-banner*/
+main{
+  width: 100%; min-width: 1280px;
+  background-color: #f5f5f5;
+}
+#inquiry-banner{
+  width: 100%; min-width: 1280px;
+  padding-top:142px;
+  text-align: center;
+}
+#inquiry-banner h1{
+  position: relative;
+  font:bold 40px/1.5 "Noto Sans KR";
+}
+#inquiry-banner p{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text2_gray);
+  margin-top:10px;
+  margin-bottom: 70px;
+}
+
+/*Contact-page-go*/
+#Contact-page-go .goto{
+  width: 1190px; height: 150px;
+  background-color: var(--color-sub_mid_green);
+  border-radius: 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:145px;
+}
+#Contact-page-go .goto h3{
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-white2);
+  line-height: 1.2;
+}
+#Contact-page-go .goto button{
+  width: 282px; height: 57px;
+  background-color: var(--color-white2);
+  color:var(--color-text1_dark);
+  border-radius: 75px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*#faq*/
+#faq .faq-wrap{
+  margin-top: 60px;
+  margin-bottom: 185px;
+}
+#faq .faq-wrap .faq-top{
+  display: flex;
+  align-items: flex-end;
+  margin-left: 16px;
+  margin-bottom:17px;
+  line-height: 1;
+}
+#faq .faq-wrap .faq-top h1{
+  font:bold 50px "Pretendard";
+  transform: translateY(1px);
+}
+#faq .faq-wrap .faq-top p{
+  font-size: 18px;
+  color:var(--colot-text2_gray);
+  margin-left: 27px;
+  font-weight: 300;
+  transform: translateY(-6px);
+}
+#faq .faq-list li.tr-top{
+  display: flex;
+  align-items: center;
+  font:bold 20px "Pretendard";
+  border-top: 2px solid var(--color-text1_dark);
+  border-bottom: 1px solid var(--color-text2_gray);
+  padding:22px 0;
+}
+#faq .faq-list li.tr-top h2{
+  width:100px;
+  font:bold 20px "Pretendard";
+  text-align: center;
+}
+#faq .faq-list li.tr-top p{
+  margin-left: 570px;
+}
+#faq .faq-list li.faq-item .q-wrap{
+  width: 100%;;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:24px 0;
+
+  border-bottom:1px solid var(--color-text2_gray);
+}
+#faq .faq-list li.faq-item .q-wrap h4{
+  width: 100px;
+  flex-shrink: 0;
+  font:600 18px "Pretendard";
+  text-align: center;
+}
+#faq .faq-list li.faq-item .q-wrap p{
+  font:600 18px "Pretendard";
+  text-align: left;
+  flex-shrink: 1;
+}
+#faq .faq-list li.faq-item .q-wrap::after{
+  width: 21px; height: 10.5px;
+  margin-left: auto;
+  margin-right: 50px;
+  content: "";
+  background: url(../img/common/icon/faq-icon.png) no-repeat center/cover;
+
+  transition: .3s;
+}
+#faq .faq-list li.faq-item.active .q-wrap::after{
+  transform: rotate(180deg);
+}
+
+#faq .faq-list li.faq-item .a-wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding:24px 0;
+  border-bottom:1px solid var(--color-text2_gray);
+  background-color: #ededed;
+
+  overflow: hidden;
+}
+#faq .faq-list li.faq-item .a-wrap h4{
+  width: 100px;
+  flex-shrink: 0;
+  font:600 18px "Pretendard";
+  text-align: center;
+  color:var(--color-main_green);
+}
+#faq .faq-list li.faq-item .a-wrap p{
+  font:600 18px "Pretendard";
+  text-align: left;
+  flex-shrink: 1;
+  padding-right: 126px;;
+  font-weight: 300;
+  color:#111111;
+  font-size: 16px;
+}
+
+/* #Contact-page */
+#Contact-page{
+  width: 100%;
+  padding-top: 100px;
+  background-color: #fefefe;
+  margin-bottom: 78px;
+}
+#Contact-page .agree-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:1px solid #ada7a1;
+  border-radius: 20px;
+  padding: 30px 50px;
+}
+#Contact-page .agree-wrap h3{
+  align-self: flex-start;
+  font-size: 22px;
+  font-weight: bold;
+  color:#000;
+  margin-bottom: 15px;
+}
+#Contact-page .agree-wrap textarea{
+  width: 1110px; height: 208px;
+  padding: 40px;
+  font:400 16px "Noto Sans KR";
+  line-height: 30px;
+  background-color: #f5f5f5;
+  border:none;
+  border-radius: 5px;
+  resize:none;
+  outline: none;
+}
+textarea::-webkit-scrollbar{
+  width: 50px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #2D2D2D ;
+  border:20px solid #f5f5f5;
+  border-radius: 40px;
+
+}
+textarea::-webkit-scrollbar-track {
+  background: #F5F5F5;
+  border-radius: 5px;
+}
+
+#Contact-page .agree-wrap .check-box{
+  display: flex;
+  border: 1px solid var(--color-text3_light);
+  border-radius: 30px;
+  padding: 10px 15px;
+  gap:15px;
+  margin-top:40px
+}
+#Contact-page label{
+  display: flex;
+}
+#Contact-page label input[type="radio"]{
+  display: none;
+}
+#Contact-page label{
+  cursor: pointer;
+}
+#Contact-page label i{
+  line-height: 30px;
+  width: 30px; height: 30px;
+  color: #D2CCC6;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  border:1px solid #B7B2AC;
+  margin-right: 5px;
+
+  transition: .3s;
+}
+#Contact-page label span{
+  line-height: 30px;
+  color:#B7B2AC;
+
+  transition: .3s;
+}
+#Contact-page input[type="radio"]:checked + .circle i{
+  color:#fff;
+  background-color: var(--color-main_green);
+  border:none;
+}
+#Contact-page input[type="radio"]:checked + .circle + span{
+  color: var(--color-main_green);
+  font-weight: bold;
+}
+
+#Contact-page .contacts{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 94px;
+  margin-bottom: 135px;
+}
+#Contact-page .contacts .contact-item span{
+  display: flex;
+  align-items: center;
+  font:bold 30px "Noto Serif KR";
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+#Contact-page .contacts .contact-item div{
+  color:#736D66;
+  margin-top: 6px;
+  font-weight: 400;
+  font:16px;
+}
+.customer{
+  display: flex;
+  justify-content: space-between;
+}
+.customer h3{
+  font-size: 30px;
+  font-weight: 600;
+}
+.customer .customer-box{
+  width: 1018px;
+  border-top: 2px solid #2b231a;
+  padding-top: 22px;
+}
+.customer:nth-child(2){
+  margin-top:130px;
+}
+.customer .customer-box label{
+  margin-bottom: 15px;
+}
+.customer .customer-box label > p{
+  width: 111px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.customer .customer-box input{
+  width: 458px; height: 40px;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  text-indent:20px;
+}
+.customer .customer-box textarea{
+  width:100%; height: 276px;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  padding:20px;
+  font:400 14px "Noto Sans KR";
+  resize:none;
+}
+.customer .customer-box input[name="subject"]{
+  width: 100%;
+}
+
+.inquiry-form button{
+  border:1px solid #000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 35px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 130px;
+
+}
+.inquiry-form button:hover{
+  background-color: #000;
+  color: #f5f5f5;
+}
+.inquiry-form button > img{
+  margin-left: 60px;
+    transition: .2s;
+}
+.inquiry-form button:hover img{
+  filter:invert();
+  transform: translateX(10px);
+}
