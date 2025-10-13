@@ -1,5 +1,5 @@
 .login{
-  width: 100%; height: 100vh;
+  width: 100%; height: 100vh; min-height: 1000px;
   background: linear-gradient(0deg,#3654429f), url(../img/login/login-bg.jpg) no-repeat center/cover;
   color: var(--color-white2);
 }
@@ -23,12 +23,163 @@
   color:#fff;
   letter-spacing: 1px;
   font-family: "Noto Snas KR";
+
+  transition: .2s;
 }
 .login .back-btn img{
   margin-right: 22px;
+  transform: translateY(1px);
 }
-
+.login .back-btn:hover{
+  font-weight: 500;
+  transform: translateX(-15px);
+}
 
 .login .login-form-wrap{
   display: flex;
+  margin-top: 20px;
+}
+.login .login-form-wrap .right-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 780px;
+  background: #fbfbfb2d;
+  backdrop-filter: blur(5px);
+  border:1px solid #ffffff69;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 0 84px;
+}
+.login .login-form-wrap .right-wrap .text-box{
+  width: 322px;
+
+  margin-bottom: 40px;
+}
+.login .login-form-wrap .right-wrap .text-box h1{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.login .login-form-wrap .right-wrap .text-box p{
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.login .login-form-wrap .right-wrap .form-field{
+  display: flex;
+  flex-direction: column;
+  gap:9px;
+}
+.login .login-form-wrap .right-wrap .form-field label{
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.login .login-form-wrap .right-wrap .form-field input{
+  height: 40px;
+  background: none;
+  border:none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+.login .login-form-wrap .right-wrap .form-field:nth-of-type(3){
+  position: relative;
+  margin-top: 35px;
+}
+.login .login-form-wrap .right-wrap .form-field:nth-of-type(3) img{
+  position: absolute;
+  right: 0; bottom: 9px;
+  cursor: pointer;
+}
+.login .login-form-wrap .right-wrap .form-field input::placeholder{
+  color: #e2e2e2;
+  font-size: 15px;
+}
+.login .login-form-wrap .right-wrap .login-keep_wrap{
+  margin-top: 13px;
+}
+.login .login-form-wrap .right-wrap .login-keep_wrap input[type="checkbox"]:checked{
+  border-color: #fff;
+  background-color: #fff;
+}
+.login .login-form-wrap .right-wrap .login-keep_wrap input[type="checkbox"]{
+  appearance: none; 
+  box-sizing: border-box;
+  background-clip: content-box;
+  padding: 0.25em;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transform: translateY(2px);
+  margin-right: 7px;
+}
+.login .login-form-wrap .right-wrap button[type="submit"]{
+  width: 100%; height: 47px;
+  background: var(--color-main_green);
+  color:#fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 50px;
+
+  transition: .2s;
+}
+.login .login-form-wrap .right-wrap button[type="submit"]:hover{
+  background-color: var(--color-sub_dark_green);
+}
+.login .login-form-wrap .right-wrap .account-actions{
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  
+}
+.login .login-form-wrap .right-wrap .account-actions a:hover{
+  border-bottom: 1px solid #ffffffb6;
+}
+.login .login-form-wrap .right-wrap .divider{
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.login .login-form-wrap .right-wrap .divider::after,
+.login .login-form-wrap .right-wrap .divider::before{
+  content: "";
+  display: inline-block;
+  width: 130px; height: 1px;
+  background: #fff;
+}
+.login .login-form-wrap .right-wrap .sns-login_wrap{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.login .login-form-wrap .right-wrap .sns-login_wrap img {
+  opacity: 0.8;
+  transition: .1s;
+}
+.login .login-form-wrap .right-wrap .sns-login_wrap a:hover img {
+  opacity: 1;
+}
+
+.login .login-form-wrap .left-wrap{
+  width: 50%;
+  height: 780px;
+  overflow: hidden;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  background: url(../img/login/login-banner.png) center/cover no-repeat;
+  cursor: pointer;
 }

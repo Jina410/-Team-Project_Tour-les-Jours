@@ -32,10 +32,11 @@ main{
   gap:145px;
 }
 #Contact-page-go .goto h3{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--color-white2);
   line-height: 1.2;
+  letter-spacing: 1px;
 }
 #Contact-page-go .goto button{
   width: 282px; height: 57px;
@@ -250,6 +251,9 @@ textarea::-webkit-scrollbar-track {
   font:bold 30px "Noto Serif KR";
   line-height: 30px;
   margin-bottom: 15px;
+}
+#Contact-page .contacts .contact-item span > img{
+  margin-right: 10px;
 }
 #Contact-page .contacts .contact-item div{
   color:#736D66;
