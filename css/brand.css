@@ -1,0 +1,316 @@
+.mid {
+  justify-content: space-between;
+}
+
+.section_img{
+  position:relative;
+  font-size: 16px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.section_img > .wrap {
+  width:566px;
+  margin-left:224px;
+}
+
+.section_img > .wrap_2 {
+  width:535px;
+  margin-left:124px;
+  /* outline: 1px solid red; */
+}
+
+.section_img > .wrap_3 {
+  width:499px;
+  margin-left:209px;
+  /* outline: 1px solid red; */
+}
+
+.section_img > .wrap_4 {
+  width:587px;
+  margin-left:80px;
+}
+
+.section_img > .wrap_5 {
+  width:523px;
+  margin-left:245px;
+}
+
+.section_img > .wrap > p {
+  color: #595C58;
+}
+
+.section_img > .wrap_2 > p {
+  color: #595C58;
+}
+
+.section_img > .wrap_3 > p {
+  color: #595C58;
+}
+
+.section_img > .wrap_4 > p {
+  color: #595C58;
+}
+
+.section_img > .wrap_5 > p {
+  color: #595C58;
+}
+
+.img1 {
+  width: 892px;
+  height: 385px;
+  background: var(--color-main_ivory);
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  text-align: center;
+  /* outline: 1px solid red; */
+}
+
+.img2 {
+  width: 897px;
+  height: 385px;
+  background: var(--color-main_ivory);
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  text-align: center;
+}
+
+.img3 {
+  width: 877px;
+  height: 385px;
+  background: var(--color-main_ivory);
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  text-align: center;
+}
+
+.img4 {
+  width: 897px;
+  height: 385px;
+  background: var(--color-main_ivory);
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  text-align: center;
+}
+
+.img5 {
+  width: 877px;
+  height: 385px;
+  background: var(--color-main_ivory);
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  text-align: center;
+  /* outline: 1px solid red; */
+}
+
+.section_top {
+      width: 100%;
+      min-height: 315px;
+      background: var(--color-sub_light_green);
+      padding: 60px 20px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+  .section_top h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+        color: var(--color-main_green);
+  }
+
+  .section_top p {
+      color: var(--color-text2_gray);
+      font-size: 16px;
+  }
+
+    /* ===== 중간 본문 영역 ===== */
+
+    .mid {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 84px;
+    }
+
+    /* 공통 b 강조색 */
+    .img1 b, .img2 b, .img3 b, .img4 b, .img5 b {
+      color: var(--color-main_orange);
+      font-weight: bold;
+    }
+
+    /* 원형 이미지 (::before) */
+    .img1::before, .img2::before, .img3::before, .img4::before, .img5::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 385px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* ===== 개별 섹션 (좌우 번갈아가며) ===== */
+
+    /* 1. 이미지 왼쪽 */
+    .img1 {
+      text-align: left;
+    }
+
+    .img1 h1{
+      font-size:20px;
+      margin-top:52px;
+      margin-bottom:30px;
+    }
+
+    .img1::before {
+      left: -190px;
+      background-image: url("../img/brand/pic1.png");
+    }
+    .img1::after {
+      left: -24px;
+    }
+
+    /* 2. 이미지 오른쪽 */
+    .img2 {
+      text-align: right;
+    }
+
+    .img2 h1{
+      font-size:20px;
+      margin-top:52px;
+      margin-bottom:30px;
+    }
+
+    .img2::before {
+      right: -186px;
+      background-image: url("../img/brand/pic2.png");
+    }
+    .img2::after {
+      right: -24px;
+    }
+
+    /* 3. 이미지 왼쪽 */
+    .img3 {
+      text-align: left;
+    }
+
+    .img3 h1{
+      font-size:20px;
+      margin-top:29px;
+      margin-bottom:30px;
+    }
+
+    .img3::before {
+      left: -206px;
+      background-image: url("../img/brand/pic3.png");
+    }
+    .img3::after {
+      left: -24px;
+    }
+
+    /* 4. 이미지 오른쪽 (원하면 pic4 추가 가능) */
+    .img4 {
+      text-align: right;
+    }
+
+    .img4 h1{
+      font-size:20px;
+      margin-top:90px;
+      margin-bottom:30px;
+    }
+
+    .img4::before {
+      right: -186px;
+      background-image: url("../img/brand/pic4.png");
+    }
+    .img4::after {
+      right: -24px;
+    }
+
+    /* 5. 이미지 왼쪽 (원하면 pic5 추가 가능) */
+    .img5 {
+      text-align: left;
+    }
+
+    .img5 h1{
+      font-size:20px;
+      margin-top:52px;
+      margin-bottom:30px;
+    }
+
+    .img5::before {
+      left: -170px;
+      background-image: url("../img/brand/pic5.png");
+    }
+    .img5::after {
+      left: -24px;
+    }
+
+    /* 카드 공통: 가운데 정렬 + 기준점 */
+  .img1, .img2, .img3, .img4, .img5{
+    margin: 0 auto;      /* ← 이것만으로 가로 중앙 */
+    position: relative;  /* ::before 원형의 기준 */
+  }
+
+    /* ===== 하단 문구 ===== */
+
+    .bottom {
+      text-align: center;
+      padding: 100px 20px 140px;
+      /* outline: 1px solid red; */
+    }
+
+    .speech-bubble {
+      width:1016px;
+      height:437px;
+      margin:auto;
+      position: relative;
+      background: #365442;
+      border-radius: .4em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:30px;
+      border-radius: 30px;
+    }
+
+    .speech-bubble:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: 28px solid transparent;
+      border-top-color: #365442;
+      border-bottom: 0;
+      margin-left: -28px;
+      margin-bottom: -28px;
+    }
+
+    .bottom p {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f1f1f1;
+      line-height: auto;
+      padding: 60px 0;
+      background:url(../img/brand/font.png) center no-repeat;
+    }
+
+    /* 표 */
+
+    .bottom .history {
+      width: 1056px;
+      opacity: 0.9;
+      margin: 120px auto 0; /* ← 이것만으로 가로 중앙 */
+      transform: translateX(78px);   
+
+    }

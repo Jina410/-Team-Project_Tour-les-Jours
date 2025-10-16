@@ -1,0 +1,125 @@
+body{
+  background-color: var(--color-bg_white);
+}
+
+.logo{
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.text_box{
+  width: 1190px;
+  height: 124px;
+  background-color: var(--color-main_green);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 65px;
+  align-items: center;
+}
+
+.text_box b{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ED6C24;
+}
+
+.text_box p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-white2);
+}
+
+.main_text_box{
+  width: 1188px;
+  height: 206px;
+  background-color: var(--color-main_beige);
+  display: flex;
+  justify-content: center;
+}
+
+.main_text_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main_text_box p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: var(--color-white2);
+  font-weight: 300;
+}
+
+
+/*지도*/
+.container h1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.map_text{
+  margin-top: 90px;
+}
+
+
+
+
+
+
+
+
+iframe{
+  display: block;
+  margin-top: 30px;
+  border-radius: 20px 20px 0 0;
+}
+
+.store-info-wrap{
+  display: flex;
+  padding-bottom: 120px;
+}
+.store-info-wrap .store-name{
+  width: 307px; height: 142px;
+  background: var(--color-main_green);
+  color: var(--color-white2);
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  padding:0 20px;
+}
+.store-info-wrap .info-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background: #fff;
+}
+.store-info-wrap .info-wrap .info-item{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.store-info-wrap .info-wrap .info-item .txt-box{
+  color: var(--color-main_green);
+}
+.store-info-wrap .info-wrap .info-item .txt-box h1{
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+  font-weight: 700;
+}
+.store-info-wrap .info-wrap .info-item .txt-box p{
+  font-size: 16px;
+  font-weight: 500;
+}

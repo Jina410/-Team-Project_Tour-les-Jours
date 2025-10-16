@@ -1,0 +1,188 @@
+* {
+  font-weight: inherit;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--color-bg_white);
+}
+
+/*상단 로고 이미지 설명글*/
+.global p {
+  font-family: 'Utopia Std';
+  font-weight: 500;
+  color: var(--color-main_green);
+  text-align: center;
+  margin-top: 120px;
+}
+
+.global em {
+  font-size: 40px;
+}
+
+.global b {
+  font-size: 30px;
+}
+
+.global span {
+  font-size: 25px;
+}
+
+.img_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_box {
+  width: 862px;
+  height: 164px;
+  background-color: var(--color-main_green);
+  border-radius: 20px;
+  margin: 36px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text_box p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fbfbfb;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+/*중앙 이미지*/
+.global_line {
+  display: flex;
+  justify-content: center;
+}
+
+/*하단 세계지도*/
+.map_wrap {
+  position: relative;
+  width: 1190px;
+  height: 694.96px;
+  background-color: #CCBEA5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 31px;
+}
+
+.map_wrap .map img {
+
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 122.57px;
+  right: 40.46px;
+}
+
+.map_wrap .map p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  color: var(--color-white2);
+  margin-top: 47.48px;
+}
+
+/*나라*/
+.flag_box {
+  width: 1000px;
+  height: 212px;
+  background-color: #CCBEA5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 26px 0;
+  margin: auto;
+  margin-top: 51px;
+  margin-bottom: 120px;
+}
+
+
+.flag_box ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 67px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.flag_box ul li {
+  text-align: center;
+
+}
+
+.flag_box ul li img {
+  display: block;
+  margin: 0 auto 5px;
+  gap: 84px;
+}
+
+.flag_box li h5 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+.flag_box ul li p {
+  font-family: 'Pretendard';
+  font-size: 16px;
+  color: var(--color-text2_gray);
+  line-height: 1.2;
+}
+
+.flag_box ul li a p {
+  color: var(--color-sub_brown_gray);
+  margin-top: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.flag_box ul li a p:hover {
+  color: var(--color-white2);
+  transition: .2s;
+}
+
+/*아이콘*/
+ #sns_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+  margin-top: 48px;
+
+}
+
+#sns_icon_h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+svg path {
+  fill: var(--color-sub_brown_gray);
+  transition: .2s;
+}
+
+svg:hover path {
+  fill: #fff;
+  transform: scale(1);
+}
