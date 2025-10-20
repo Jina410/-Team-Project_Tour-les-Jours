@@ -1,0 +1,315 @@
+#banner{
+  position: relative;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.section-bg{
+  color: var(--color-bg_white);
+}
+.bread-recommend{
+  height: auto;
+}
+
+/* Today bread  시작*/
+.bread-recommend > h3{
+  text-align:  center;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--color-main_orange);
+  margin: 120px 0 60px;
+}
+.bread-recommend .container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin:  auto;
+  padding: 40px 20px;
+}
+.product-card{ /* 맨 밑에 gab 설정*/
+  position: relative;
+  width: 385px;
+  height: auto;
+  min-height: 385;
+  background-color: var(--color-bg_white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 24px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  gap: 29px;
+}
+.product-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+/* TODAY표시아이콘 */
+.badge{
+  top: 40px;
+  position: absolute;
+  left: 40px;
+  border-radius: 30px;
+  background-color: var(--color-main_green);
+  color: var(--color-white1);
+  font-size: 16px;
+  padding: 7px 30px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.product-image{ 
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-title{ /*라벨 체크*/
+  font-size: 16px;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+.product-card p{
+  font-size: 16px;
+  color: var(--color-text2_gray);
+}
+
+/* main-menu/sub-menu  */
+.main-menus{
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.main-menus> .containers{
+  max-width: 100%;
+}
+
+/* main box color */
+.main-menus .menus{
+  display: flex;
+  width: 100%;
+  /* height: 74px; */
+  border-radius: 40px;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  background-color: var(--color-main_green);
+}
+
+.main-menus .menus li{
+  position: relative;
+}
+.menus li.active >  a{ /*빵 단어 색상 표시*/
+  color: var(--color-sub_lime) !important
+}
+.main-menus .menus li a{
+  display: block;
+  padding: 12px 20px;
+  color: var(--color-white2);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 15px auto;
+}
+
+.main-menus .menus li.has-sub{
+  position: relative;
+} 
+.main-menus .menus li.has-sub:hover > a{
+  color: var(--color-sub_lime);
+}
+.main-menus .menus li:nth-child(1) :hover{
+  color: var(--color-sub_lime);
+}
+.main-menus .menus li:nth-child(2) :hover{
+  color: #000;
+}
+
+/* 서브메뉴 */
+.main-menus .sub{
+  position: absolute;
+  top: calc(100% + 15px); /*메인메뉴 아래로 15px 간격*/
+  left: 0%;
+  width: max-content;
+  gap: 20px;
+  list-style: none;
+  white-space: nowrap;
+  border-radius: 20px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: all 0.25s ease;
+  display: flex;
+}
+
+/* 마우스 올리면 서브메뉴 표시 */
+.has-sub.active:not(:first-child) .sub,
+.has-sub.hover:not(:first-child) .sub{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+
+/* 서브 항목 */
+.main-menus .sub li a{
+  display: block;
+  padding: 10px 20px;
+  color: var(--color-text2_gray);
+}
+.sub li a:hover{
+  color: var(--color-black);
+}
+/* main-menu/sub-menu 끝 */
+
+/* menu imges시작 */
+.main-bread{
+  margin-top: 150px;
+  padding: 40px 20px;
+}
+
+.menu-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.menu-item{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .menu-item:hover {
+  outline: 1px solid red;
+  transform: translateY(-6px);
+} */
+
+.image-wrapper{
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item .image-wrapper img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.menu-item .image-wrapper:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.image-wrapper .badge{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  background: #65D02B;
+  padding: 3px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.image-wrapper .badges{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #FF4E51;
+  color: var(--color-white1);
+  font-size: 16px;
+  padding: 3px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.menu-title{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+  color: var(--color-black);
+}
+/* 이미지 더 보기 버튼 */
+.show-more-wrap {
+  width: 100%;
+  text-align: center;
+  margin-top: 90px;
+}
+.show-more-btn{
+  background-color: transparent;
+  border: 2px solid var(--color-text3_light);
+  color: var(--color-text2_gray);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.show-more-btn:hover{
+  background-color: var(--color-main_orange);
+  color: #fff;
+  transform: translateY(-3px);
+  border-color:transparent ;
+}
+/* 모바일 어플(구매 / 선물 버튼) */
+.mobile-purchase-banner{
+  background: var(--color-sub_beige_light);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  padding: 45px 60px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 140px auto ;
+  cursor: pointer;
+  overflow: hidden;
+}
+.mobile-purchase-banner:hover{
+  background: var(--color-main_beige);
+}
+/* 모바일 텍스트 */
+.banner-text{
+  text-align: center;
+  z-index: 1;
+  gap: 23px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.banner-text h3{
+  font-size: 20px;
+  color: var(--color-white1);
+  margin-bottom: 5px;
+  font-weight: 600;
+  display: block;
+  letter-spacing: 0.6px;
+}
+.banner-text span{ /* 여백 주기*/ 
+  font-size: 30px;
+  color: var(--color-white2);
+  font-weight: 600;
+  opacity: 0.9;
+  margin-left: 26px;
+}
+.banner-icon{
+  position: absolute;
+  right: 40px;
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}

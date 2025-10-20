@@ -1,0 +1,314 @@
+body {
+    background-color: var(--color-bg_white);
+}
+
+/* 이벤트 섹션 */
+.event-section {
+    max-width: 1190px;
+    margin: 120px auto 0;
+    text-align: center;
+    margin-bottom:120px;
+}
+
+.event-section .section-title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-text1_dark);
+}
+
+.event-section .section-subtitle {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px; /* 타이틀 바로 밑 10px */
+    color: var(--color-text2_gray);
+    line-height: 1.5;
+}
+
+.event-grid {
+    margin: 70px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: calc(489px * 2 + 40px);
+    text-align: center;
+}
+
+.event-card {
+    width: 489px;
+    height: 410px;
+    border-radius: 40px;
+    border: 1px solid var(--color-sub_beige_light);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.event-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-sub_beige_light);
+}
+
+.event-info {
+    width: 100%;
+    height: 110px;
+    background: var(--color-main_ivory);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.event-info p {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: var(--color-text1_dark);
+    font-weight: 500;
+}
+
+.event-info .sub-desc {
+    font-size: 20px;
+    margin: 0;
+    color: var(--color-text2_gray);
+    font-weight: 400
+}
+
+/* CJ ONE 섹션 */
+.cjone-section {
+    max-width: 1190px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    position: relative;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text3_light);
+    margin-bottom: 70px;
+}
+
+.cjone-section .section-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 70px; 
+}
+
+.cjone-content {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+/* 세로선 */
+.cjone-vertical-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 350px;
+    background-color: var(--color-text3_light);
+    top: 0;
+}
+
+/* 왼쪽 이미지 + 버튼 영역 */
+.cjone-image {
+    position: absolute;
+    left: calc(50% - 60px - 293px); 
+    top: 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cjone-image img {
+    width: auto; 
+    height: auto; 
+}
+
+/* 버튼 */
+.cjone-buttons {
+    display: flex;
+    gap: 23px;
+    margin-top: 96px; 
+}
+.cjone-buttons button {
+    width: 145px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.cjone-buttons .btn-green {
+    background-color: var(--color-sub_mid_green);
+    color: var(--color-white1);
+}
+.cjone-buttons .btn-ivory {
+    background-color: var(--color-main_ivory);
+    color:var(--color-black);
+}
+
+/* 오른쪽 설명 영역 */
+.cjone-info {
+    position: absolute;
+    left: calc(50% + 50px); 
+    top: 15px;  
+    text-align: left;
+    width: auto;
+}
+
+.cjone-info h3 {
+    font-size: 18px;
+    color: var(--color-sub_dark_green);
+    margin-bottom: 20px;
+}
+
+.cjone-info p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: var(--color-text1_dark);
+}
+
+.cjone-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cjone-info ul li {
+    position: relative;
+    padding-left: 20px; 
+    font-size: 16px;
+    color: var(--color-text2_gray);
+    line-height: 1.5;
+}
+
+.cjone-info ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px; 
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-text2_gray);
+    border-radius: 100%;
+}
+
+.cjone-info ul li br {
+    display: block;              
+    margin: 0;                   
+}
+.divider-below {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text3_light);
+    margin-top: 120px; 
+}
+
+/* 통신사 */
+.tel-section {
+    max-width: 1190px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px; 
+}
+
+.tel-section .section-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.tel-notice {
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    color: var(--color-text2_gray);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.tel-section {
+    text-align: center; 
+}
+
+.tel-notice li {
+    position: relative; 
+    padding-left: 20px;
+}
+
+.tel-notice li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em; 
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-text2_gray);
+    border-radius: 100%;
+}
+
+.tel-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    margin: 0 auto;
+}
+
+.tel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+}
+.tel-card img {
+    width: 266px;
+    height: 166px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+/* 카드 제목 */
+.tel-card h3 {
+    font-size: 18px;
+    text-align: left;
+    color: var(--color-sub_dark_green);
+    margin: 0 0 10px 0;
+}
+
+/* 카드 설명 텍스트 */
+.text-default {
+    white-space: nowrap;
+    font-size: 16px;
+    text-align: left;
+    margin: 0 0 10px 0;
+    color: var(--color-text1_dark);
+}
+
+.sub-desc {
+    white-space: nowrap;
+    font-size: 16px;
+    text-align: left;
+    color: var(--color-text2_gray);
+
+}
+
+/* 카드 사이 선 */
+.divider-vertical {
+    width: 1px;
+    height: 408px;
+    background-color: var(--color-text3_light);
+    margin: 0 55px;
+    margin-bottom: 120px;
+}

@@ -1,0 +1,186 @@
+body {
+    background-color: var(--color-bg_white);
+}
+
+.event-section {
+    max-width: 1190px;
+    margin: 120px auto 0;
+    text-align: center;
+}
+
+/* 타이틀 */
+.event-title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-text1_dark);
+}
+
+/* 서브타이틀 */
+.event-subtitle {
+    font-size: 16px;
+    color: var(--color-text2_gray);
+    line-height: 1.5;
+    margin: 10px auto 70px;
+}
+
+.event-content {
+    width: 1190px;
+    height: 120px;
+    background-color: var(--color-white1);
+    border-bottom: 1px solid var(--color-text3_light);
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.event-label {
+    position: absolute;
+    left: 72px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-text1_dark);
+}
+
+.event-icons {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-text2_gray);
+}
+
+.event-icons img {
+    object-fit: contain;
+}
+
+.event-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.event-main {
+    width: 1190px;
+    height: 1610px;
+    background-color: var(--color-white1);
+    border-bottom: 1px solid var(--color-text3_light);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.event-main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.event-nav-box {
+    position: relative;
+    width: 1190px;
+    height: 120px;
+    background-color: var(--color-white1);
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+.prev-icon {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+}
+
+.prev-label {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--color-text2_gray);
+    font-weight: 500;
+}
+
+.prev-title {
+    position: absolute;
+    left: calc(50% - 45px);
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+    font-size: 18px;
+    color: var(--color-text2_gray);
+    font-weight: 500;
+}
+
+/* 세로선 */
+.separator {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 120px;
+    background-color: var(--color-text3_light);
+}
+
+.next-title {
+    position: absolute;
+    left: calc(50% + 45px);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--color-text2_gray);
+    font-weight: 500;
+}
+
+.next-label {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--color-text2_gray);
+    font-weight: 500;
+}
+
+.next-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+}
+
+.list-btn {
+    display: block;
+    width: 145px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    background-color: var(--color-sub_mid_green);
+    color: var(--color-white1);
+    margin: 70px auto 120px auto;
+}
+
+.list-btn:hover {
+    background: var(--color-main_ivory);
+    color: var(--color-sub_mid_green);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.09);
+}

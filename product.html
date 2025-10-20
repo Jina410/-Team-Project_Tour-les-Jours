@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>건강한 베이커리, 뚜레쥬르</title> <!--서브메뉴이름 | 뚜레쥬르 << 타이틀양식-->
+  <link rel="icon" href="img/common/favicon_io/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--제이쿼리JS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> <!--SwiperCSS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--SwiperJS-->
+
+  <link href="css/common.css" rel="stylesheet"> <!--공통CSS-->
+  <link href="css/header.css" rel="stylesheet"> <!--headerCSS-->
+  <link href="css/product.css" rel="stylesheet"> <!--페이지 CSS-->
+  <link href="css/footer.css" rel="stylesheet"> <!--footerCSS-->
+  <script src="js/common.js"></script> <!--공통JS-->
+  <script src="js/product.js"></script> <!-- js-->
+</head>
+
+<body>
+  <!-- 고정 top버튼 -->
+  <div class="top">
+    <a href="#"><img src="img/common/icon/topBtn1.png" alt="top버튼"></a>
+  </div>
+
+  <header>
+    <div class="top-wrap">
+      <div class="container">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="img/common/logo.png" alt="뚜레쥬르 로고">
+          </a>
+        </div>
+        <div class="ico-menu_wrap">
+          <div class="search">
+            <a href="#"><img src="img/common/icon/search_icon.png" alt="검색 아이콘"></a>
+          </div>
+          <img src="img/common/icon/Line1.png" alt="구분선">
+          <ul class="sns-menu-wrap">
+            <li><a href="#"><img src="img/common/icon/sns_X_icon.png" alt="X"></a></li>
+            <li><a href="#"><img src="img/common/icon/sns_faceBook_icon.png" alt="페이스북"></a></li>
+            <li><a href="#"><img src="img/common/icon/sns_instagram_icon.png" alt="인스타그램"></a></li>
+          </ul>
+          <img src="img/common/icon/Line1.png" alt="구분선">
+          <a href="login.html">LOGIN</a>
+        </div>
+      </div>
+    </div>
+    <nav class="main-menu">
+      <div class="container">
+        <ul class="menu">
+          <li><a href="brand.html">BRAND</a>
+            <ul class="sub-menu">
+              <li><a href="brand.html">브랜드 스토리</a></li>
+              <li><a href="brand_global.html">글로벌 뚜레쥬르</a></li>
+              <li><a href="latelier.html">뚜레쥬르 라뜰리에</a></li>
+            </ul>
+          </li>
+          <li><a href="product.html">PRODUCT</a>
+            <ul class="sub-menu">
+              <li><a href="product.html">빵</a></li>
+              <li><a href="product.html">케이크</a></li>
+              <li><a href="product.html">델리</a></li>
+              <li><a href="product.html">디저트&스낵</a></li>
+              <li><a href="product.html">음료</a></li>
+              <li><a href="product.html">선물</a></li>
+            </ul>
+          </li>
+          <li><a href="notice.html">COMMUNITY</a>
+            <ul class="sub-menu">
+              <li><a href="notice.html">뉴스&공지사항</a></li>
+              <li><a href="event.html">이벤트&멤버십 혜택</a></li>
+            </ul>
+          </li>
+          <li><a href="inquiry.html">INQUIRYG</a>
+            <ul class="sub-menu">
+              <li><a href="inquiry.html">고객센터</a></li>
+              <li><a href="store.html">매장찾기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-bg"></div>
+    </nav>
+  </header>
+  <div class="header-case"></div>
+
+  <main>
+    <!--! 여기부터 작성하기-->
+    <!-- banner 이미지 -->
+    <div id="banner">
+      <img src="img/breadimg/banner1.jpg" alt="banner1">
+    </div>
+
+    <!-- TODAY BREAD! -->
+    <div class="section-bg">
+      <div class="bread-recommend">
+        <h3>Today Bread!</h3>
+        <div class="container">
+          <div class="product-card">
+            <a href="bread-detail.html">
+              <div class="badge">Today</div>
+              <img src="img/breadimg/bread1.jpg" alt="bread1" class="product-image">
+              <h3 class="product-title">2CM 쌀식빵</h3>
+              <p>우리쌀을 더해 느껴지는 단맛과<br>
+                촉촉하면서도 쫄깃한 식감이<br>
+                매력적인 제품 </p>
+            </a>
+          </div>
+
+          <div class="product-card">
+            <div class="badge">Today</div>
+            <a href="bread-detail.html">
+              <img src="img/breadimg/bread2.jpg" alt="bread2" class="product-image">
+              <h3 class="product-title">먹태깡 바게트깡(청양마요)</h3>
+              <p>먹태깡과 바게트의 바삭한 만남!<br>
+                바삭한 바게트에 청양마요소스를 더해<br>
+                자꾸만 손이 가는 제품</p>
+            </a>
+          </div>
+
+          <div class="product-card">
+            <div class="badge">Today</div>
+            <a href="bread-detail.html">
+              <img src="img/breadimg/bread17.jpg" alt="bread17" class="product-image">
+              <h3 class="product-title">한 장씩 뜯어먹는 32겹 브레드</h3>
+              <p>프랑스산 버터가 겹겹이 녹아 퍼지는 풍미!<br>
+                티슈처럼 한 장, 한 장 뜯어지는 재미를 더한<br>
+                달콤한 패스트리</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- main-menu/sub-menu -->
+      <div class="main-menus">
+        <div class="containers">
+          <ul class="menus">
+            <li><a href="#">전체</a></li>
+
+            <li class="has-sub active bread">
+              <a href="#">빵</a>
+              <ul class="sub">
+                <li><a href="#">전체</a></li>
+                <li><a href="#">식빵</a></li>
+                <li><a href="#">간식빵</a></li>
+                <li><a href="#">건강빵</a></li>
+                <li><a href="#">파이/패스토리</a></li>
+                <li><a href="#">도넛/고로케</a></li>
+              </ul>
+            </li>
+            <!-- 케이크 -->
+            <li class="has-sub">
+              <a href="#">케이크</a>
+              <ul class="sub">
+                <li><a href="#">생크림 케이크</a></li>
+                <li><a href="#">스페셜 케이크</a></li>
+                <li><a href="#">무스 케이크</a></li>
+                <li><a href="#">캐릭터 케이크</a></li>
+                <li><a href="#">조각 케이크</a></li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a href="#">델리</a>
+              <ul class="sub">
+                <li><a href="#">샌드위치</a></li>
+                <li><a href="#">샐러드</a></li>
+                <li><a href="#">간편식</a></li>
+              </ul>
+            </li>
+            <!-- 디저트&스낵 -->
+            <li class="has-sub">
+              <a href="#">디저트&스낵</a>
+              <ul class="sub">
+                <li><a href="#">마카롱</a></li>
+                <li><a href="#">초콜릿/캔디</a></li>
+                <li><a href="#">아이스크림</a></li>
+                <li><a href="#">구움양과</a></li>
+                <li><a href="#">잼/스프레드</a></li>
+              </ul>
+            </li>
+            <!-- 음료 -->
+            <li class="has-sub">
+              <a href="#">음료</a>
+              <ul class="sub">
+                <li><a href="#">커피</a></li>
+                <li><a href="#">블랜디드</a></li>
+                <li><a href="#">과일주스/에이드</a></li>
+                <li><a href="#">티/라떼류</a></li>
+                <li><a href="#">우유/병음료</a></li>
+              </ul>
+            </li>
+            <!-- 선물 -->
+            <li class="has-sub">
+              <a href="#">선물</a>
+              <ul class="sub">
+                <li><a href="#">롤/파운드/카스테라</a></li>
+                <li><a href="#">선물세트</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- menu imges -->
+      <section class="main-bread">
+        <div class="menu-list">
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread1.jpg" alt="2CM 쌀식빵" loading="lazy">
+              <div class="badge">New</div>
+            </div>
+            <h3 class="menu-title">2CM 쌀식빵</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread2.jpg" alt="먹태깡 바게트깡 청양마요" loading="lazy">
+              <div class="badge">New</div>
+            </div>
+            <h3 class="menu-title">먹태깡 바게트깡(청양마요)</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread3.jpg" alt="먹태깡 바게트깡 고추장마요" loading="lazy">
+              <div class="badge">New</div>
+            </div>
+            <h3 class="menu-title">먹태깡 바게트깡(고추장마요)</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread4.jpg" alt="고구마깡 뀌니아망" loading="lazy">
+              <div class="badge">New</div>
+            </div>
+            <h3 class="menu-title">고구마깡 뀌니아망</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread5.jpg" alt="양파링 도넛" loading="lazy">
+              <div class="badge">New</div>
+            </div>
+            <h3 class="menu-title">양파링 도넛</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread6.jpg" alt="고식이섬유&저당 곡물식빵" loading="lazy">
+              <div class="badge">New</div>
+            </div>
+            <h3 class="menu-title">고식이섬유&저당 곡물식빵</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread7.jpg" alt="슬로우 오트 식빵" loading="lazy">
+              <div class="badge">New</div>
+            </div>
+            <h3 class="menu-title">슬로우 오트 식빵</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread8.jpg" alt="슬로우 오트 모닝롤" loading="lazy">
+              <div class="badge">New</div>
+            </div>
+            <h3 class="menu-title">슬로우 오트 모닝롤</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread9.jpg" alt="피스타치오 블랙번" loading="lazy">
+              <div class="badges">Best</div>
+            </div>
+            <h3 class="menu-title">피스타치오 블랙번</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread10.jpg" alt="오리지널 커피번" loading="lazy">
+              <div class="badges">Best</div>
+            </div>
+            <h3 class="menu-title">오리지널 커피번</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread11.jpg" alt="마담 얼그레이 크림번" loading="lazy">
+              <div class="badges">Best</div>
+            </div>
+            <h3 class="menu-title">마담 얼그레이 크림번</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread12.jpg" alt="고단백 현미식빵" loading="lazy">
+              <div class="badges">Best</div>
+            </div>
+            <h3 class="menu-title">고단백 현미식빵</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread13.jpg" alt="2배 더 진한 우유 식빵" loading="lazy">
+              <div class="badges">Best</div>
+            </div>
+            <h3 class="menu-title">2배 더 진한 우유 식빵</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread14.jpg" alt="기본좋은 소금버터식빵" loading="lazy">
+            </div>
+            <h3 class="menu-title">기본좋은 소금버터식빵</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread15.jpg" alt="착한빵식 통밀식빵" loading="lazy">
+            </div>
+            <h3 class="menu-title">착한빵식 통밀식빵</h3>
+          </a>
+
+          <a href="bread-detail.html" class="menu-item">
+            <div class="image-wrapper">
+              <img src="img/breadimg/bread16.jpg" alt="기본좋은 쌀 베이글" loading="lazy">
+              <div class="badges">Best</div>
+            </div>
+            <h3 class="menu-title">기본좋은 쌀 베이글</h3>
+          </a>
+        </div>
+        <!-- 👇 장식용 버튼 -->
+        <div class="show-more-wrap">
+          <button class="show-more-btn">SHOW MORE</button>
+        </div>
+        <!-- 모바일 어플 버튼 -->
+        <div class="mobile-purchase-banner">
+          <div class="banner-text">
+            <h3>뚜레쥬르 제품 <span>모바일로 구매 / 선물하기 ></span></h3>
+          </div>
+          <img src="img/breadimg/character.png" alt="선물 배달 아이콘" class="banner-icon">
+        </div>
+      </section>
+    </div><!--section bg-->
+
+
+    <!--! 여기까지 작성하기-->
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-wrap">
+        <img src="img/common/logo.png" alt="로고이미지">
+        <div class="bottom-wrap">
+          <div class="left-wrap">
+            <div class="footer-menu_wrap">
+              <ul class="footer-policy">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">위치기반서비스 이용약관</a></li>
+              </ul>
+              <ul class="footer-info">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">기사 채용안내</a></li>
+                <li><a href="#">윤리신고센터</a></li>
+              </ul>
+            </div>
+            <div class="footer-company">
+              <p>CJ푸드빌(주)&emsp;대표:김찬호&emsp;사업자등록번호:312-81-42519</p>
+              <p>주소: 서울시 중구 마른내로34(초동 106-9번지) KT&G을지로타워 3, 9-11층</p>
+              <p>Tel: 1577-0700&emsp;E-mail: help_master@cj.net</p>
+            </div>
+            <p>COPYRIGHT 2025ⓒCJ Foodvile ALL RIGHT RESERVED.</p>
+          </div>
+          <div class="right-wrap">
+            <h1>1577-0700</h1>
+            <p>고객센터 운영시간 : 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00) / 주말 공휴일 제외</p>
+            <p>문의하신 내용에 대한 답변은 요청 시 등록하신 E-Mail로 발송되며<br>
+              “온라인 상담 내역”을 통해 확인 가능합니다.</p>
+            <ul class="sns-menu-wrap">
+              <li><a href="#"><img src="img/common/icon/sns_X_icon_lime.png" alt="X"></a></li>
+              <li><a href="#"><img src="img/common/icon/sns_faceBook_icon_lime.png" alt="페이스북"></a></li>
+              <li><a href="#"><img src="img/common/icon/sns_instagram_icon_lime.png" alt="인스타그램"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+/* 제품 영양소 */
+.nutritional{
+  padding: 120px 0px;
+  background-color: var(--color-bg_white);
+}
+.nutritional .container{
+  /* padding: 120px; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 구분선 제목 */
+.title-wrap{
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.divider{
+  width: 9px;
+}
+.title-wrap h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--color-main_green);
+}
+
+/* 본문 */
+.bread-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  background: var(--color-sub_light_green);
+  padding: 50px 60px;
+  border-radius: 40px;
+}
+
+/* 왼쪽 (이미지+설명) */
+.bread-left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bread-img{
+  width: 450px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.product-desc h3{
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text1_dark);
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+.product-desc p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-text2_gray);
+}
+.product-desc .note{
+  margin-top: 30px;
+  font-size: 20px;
+}
+/* 제품 설명 */
+.menu-desc-wrap{
+  max-width: 250px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.menu-title{
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text1_dark);
+  margin-bottom: 10px;
+}
+.menu-desc,
+.menu-note{
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-text2_gray);
+  margin-bottom: 25px;
+}
+
+/* 오른쪽 영역 */
+.bread-right{
+  flex: 1;
+  text-align: center;
+}
+.product-name{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #222;
+  padding-bottom: 20px;
+}
+
+.nutrition-box{ /*전체박스*/
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 463px;
+  padding: 40px;
+}
+.nutrition-header{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #222;
+  max-height: 92px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nutrition-title{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 30px 5px;
+}
+.nutrition-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: right;
+}
+.nutrition-info p{
+  margin: 4px;
+}
+.nutrition-info strong{
+  padding-left: 40px;
+}
+/* 영양 성분 박스 끝 */
+
+/* 열량 당류 단백질 포화지방 나트륨 박스 */
+.nutrition-table{
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+.nutrition-table th,
+.nutrition-table td{
+  padding: 6px 0px;
+  text-align: left;
+}
+.nutrition-table th{
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+.nutrition-table td{
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.nutrition-note{
+  margin: 20px 0;
+  text-align: right;
+  font-size: 14px;
+  color: var(--color-text2_gray);
+}
+.allergy-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 0;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+}
+.allergy-label:nth-child(1){
+  font-size: 16px;
+  font-weight: 500;
+}
+.allergy-label:nth-child(2){
+  font-size: 14px;
+  font-weight: 400;
+}
+.btn-list{
+  display: inline-block;
+  margin-top: 80px;
+  padding: 10px 30px;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 25px;
+  font-size: 16px;
+  color: var(--color-text1_dark);
+  cursor: pointer;
+}
+.btn-list:hover{
+  background: var(--color-main_orange);
+  border: 1px solid var(--color-main_orange);
+}
